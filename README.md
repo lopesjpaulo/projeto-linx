@@ -71,15 +71,56 @@ Utilizando o postman ou qualquer outro aplicativo do tipo
 
     /{id}
 
-## Testes
+- ACCOUNT:
 
-Executar com o PHPUnit:
+    /account
 
-```
-vendor/bin/phpunit --filter=createEstabelecimento
-vendor/bin/phpunit --filter=getEstabelecimento
-vendor/bin/phpunit --filter=deleteEstabelecimento
-```
+    - POST:
+
+    Criar uma nova conta
+
+    Payload:
+
+    ```
+    {
+        "type": "1", 1 - poupanca | 2 - corrente
+        "balance": 0,
+        "client_id": 1,
+    }
+    ```
+    - GET
+
+    Recuperar todas as contas
+
+    /account/deposit
+
+    - POST
+
+    Fazer um deposito
+
+    Payload:
+
+    ```
+    {
+        "value": 300,
+        "client_id": 1
+    }
+    ```
+
+    /account/withdraw
+
+    - POST
+
+    Fazer um saque
+
+    Payload:
+
+    ```
+    {
+        "value": 300,
+        "client_id": 1
+    }
+    ```
 
 ## Demonstração
 

@@ -18,12 +18,6 @@ $router->get('/', function () use ($router) {
 });
 
 $router->group(['middleware' => 'app\Http\Middleware\AuthenticateAccess'], function() use ($router) {
-    $router->post('/estabelecimento', 'EstabelecimentoController@create');
-    $router->get('/estabelecimento', 'EstabelecimentoController@get');
-    $router->put('/estabelecimento/{id}', 'EstabelecimentoController@update');
-    $router->delete('/estabelecimento/{id}', 'EstabelecimentoController@delete');
-    $router->get('/estabelecimento/buscaCep/{cep}', 'EstabelecimentoController@buscaCep');
-
     $router->post('/client', 'ClientController@create');
     $router->get('/client', 'ClientController@get');
     $router->get('/client/{id}', 'ClientController@show');
