@@ -121,7 +121,3 @@ Utilizando o postman ou qualquer outro aplicativo do tipo
         "client_id": 1
     }
     ```
-
-## Demonstração
-
-Dentro da pasta imagem, foram colocadas algumas imagens de requisições para os endpoints, usando o postman, para exemplificar a parte da api.
